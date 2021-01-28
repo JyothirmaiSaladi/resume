@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.parent{
+			display:flex;
+	  		flex-direction: row;
+	  		justify-content: center;
+	  		background: #A9DFBF;
+	  		flex-wrap: wrap;
+		}
+		.child{
+			border: 2px ridge #17A589;
+	  		padding:1%;
+	  		background: #D0ECE7 ;
+	  		margin: 1%;
+	  		width:20%;
+		}
+		/* small scale devices*/
+		@media only screen and (min-width:320px) and (max-width:480px){
+			.child{
+				width:20%;
+				background: yellow;
+				font-size: 20px;
+				box-shadow:3px 3px 3px #04E3BC; 
+			}
+		}
+		/*medium scale devices*/
+		@media only screen and (min-width: 481px) and (max-width:767px){
+			.child{
+				width:40%;
+				border: 3px solid red;
+				border-radius: 10px;
+				background: white;
+			}
+		}
+		/*large scale devices*/
+		@media only screen and (min-width: 768px) and (max-width: 1024px){
+			.child{
+				width:30%;
+				box-shadow: 8px 8px 8px -6px green;
+			}
+		}
+	</style>
+	<meta name="viewport" content="initial-scale=1,width=device-width"/>
+
+</head>
+<body>
+	<div>
+		<section class="parent">
+			<article class="child">Columbus</article>
+			<article class="child">Seoul</article>
+			<article class="child">Beijing</article>
+			<article class="child">Hong Kong</article>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>first program</title>
+	  <link rel="icon" href="user.svg"/>
+	  <meta name="viewport" content="initial-scale=1,width=device-width"/>
+	  <style>
+	  	.parent{
+	  		display:flex;
+	  		flex-direction: row;
+	  		justify-content: center;
+	  		background: #A9DFBF;
+	  	}
+	  	.child{
+	  		border: 2px ridge #17A589;
+	  		padding:5%;
+	  		background: #D0ECE7 ;
+	  		margin: 3%;
+	  	}
+	  	@media only screen and(min-width: :320px) and(max-width: 640px){
+			.child{
+				width:20%;
+				background: yellow;
+				font-size: 10px;
+			}
+		}
+	  </style>
+</head>
+<body>
+	<div>
+		<section class="parent">
+			<article class="child">A</article>
+			<article class="child">B</article>
+			<article class="child">C</article>
+			<article class="child">D</article>
+		</section>
+	</div>
+</body>
+</html>
